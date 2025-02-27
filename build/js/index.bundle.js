@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll(".faq__item");e.length>0&&e[0].classList.add("active"),e.forEach((t=>{t.querySelector(".faq__tab-header").addEventListener("click",(()=>{const a=t.classList.contains("active");e.forEach((e=>{e.classList.remove("active")})),a||t.classList.add("active")}))}))}));

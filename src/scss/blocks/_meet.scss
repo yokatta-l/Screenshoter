@@ -1,0 +1,75 @@
+.meet {
+  padding-top: 288px;
+  padding-bottom: 118px;
+  position: relative;
+}
+.meet__line {
+  position: absolute;
+  top: -775px;
+  left: -10px;
+  z-index: -1;
+}
+.meet__wrapper {
+  display: flex;
+  gap: 139px;
+  margin-bottom: 67px;
+}
+.meet__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--131313);
+  max-width: 473px;
+  line-height: 1.2;
+}
+.meet__purple {
+  color: var(--7421b0);
+}
+.meet__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: var(--828282);
+  max-width: 571px;
+}
+.meet__bold {
+  font-weight: 500;
+  color: var(--131313);
+}
+.meet__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.meet__card {
+  background: var(--ffffff);
+  width: 338px;
+  height: 294px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-top: 50px;
+  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
+  background: var(--ffffff);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  &:hover {
+    background: var(--7421b0);
+    transform: translateY(1px);
+    box-shadow: 0 26px 48px -23px var(--7421b0);
+
+    .meet__card-text {
+      color: white;
+    }
+  }
+}
+.meet__card-img {
+  margin-bottom: 40px;
+}
+.meet__card-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--131313);
+  transition: all 0.5s ease;
+}

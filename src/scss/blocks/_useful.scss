@@ -1,0 +1,73 @@
+.useful {
+  padding-top: 334px;
+  padding-bottom: 200px;
+}
+.useful__wrapper {
+  display: flex;
+  gap: 97px;
+  margin-bottom: 80px;
+}
+.useful__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--131313);
+  max-width: 515px;
+  line-height: 1.2;
+  position: relative;
+  &::after {
+    content: url("../../img/useful/up-title.png");
+    position: absolute;
+    top: -133px;
+    left: 124px;
+  }
+}
+.useful__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: var(--828282);
+  max-width: 521px;
+}
+.useful__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.useful__card {
+  width: 338px;
+  border-radius: 10px;
+  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
+  background: var(--ffffff);
+  height: 349px;
+  padding: 50px 45px 51px 45px;
+  transition: all 0.5s ease;
+  &:hover {
+    background: var(--7421b0);
+    box-shadow: 0 26px 48px -23px var(--7421b0);
+    .useful__card-descr {
+      color: white;
+    }
+  }
+  &:nth-child(2) {
+    .useful__card-descr {
+      margin-left: 9px;
+    }
+  }
+  &:nth-child(3) {
+    .useful__card-img {
+      margin-top: 10px;
+      margin-bottom: 27px;
+    }
+  }
+}
+.useful__card-img {
+  margin-bottom: 36px;
+}
+.useful__card-descr {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--131313);
+}

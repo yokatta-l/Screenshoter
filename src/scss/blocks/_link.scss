@@ -1,0 +1,42 @@
+.link {
+  position: relative;
+  padding-top: 106px;
+  padding-bottom: 131px;
+}
+.link__container {
+  position: relative;
+}
+.link__wrapper {
+  display: flex;
+  gap: 151px;
+  align-items: center;
+}
+.link__text {
+  max-width: 462px;
+  margin-top: 39px;
+}
+.link__rectangle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: var(--828282);
+  width: 461px;
+  height: 168px;
+  padding: 30px 65px 30px 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  position: absolute;
+  bottom: -128px;
+  left: 121px;
+  background: rgba(196, 196, 196, 0.1);
+}
+.link__black {
+  color: var(--131313);
+}
+.link__img {
+  position: absolute;
+  left: -7px;
+  top: -216px;
+  z-index: -1;
+}

@@ -1,0 +1,114 @@
+.use {
+  padding-top: 73px;
+  padding-bottom: 61px;
+}
+.use__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--131313);
+  margin-bottom: 106px;
+}
+.use__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+.use__item {
+  &:nth-child(1) {
+    .use__item-title {
+      margin-left: 5px;
+    }
+    .use__item-descr {
+      margin-left: 5px;
+    }
+  }
+  &:nth-child(2) {
+    .use__item-title {
+      margin-left: 12px;
+    }
+    .use__item-descr {
+      margin-left: 4px;
+    }
+  }
+  &:nth-child(3) {
+    .use__item-title {
+      margin-left: 12px;
+    }
+    .use__item-descr {
+      margin-left: 4px;
+    }
+  }
+}
+.use__item-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--7421b0);
+  margin-bottom: 62px;
+}
+// .use__item-img {
+//   margin-bottom: 40px;
+// }
+.use__item-wrapper {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 460px;
+  height: 200px;
+  box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
+  background: var(--ffffff);
+  position: relative;
+  &:hover {
+    .use__item-btn {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.use__item-btn {
+  position: absolute;
+  /* Позиционируем кнопку как вам нужно */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 235px;
+  height: 70px;
+  box-shadow: 0 12px 56px 3px rgba(116, 33, 176, 0.48);
+  background: linear-gradient(144deg, #7421b0 20.65%, #d08eff 100%);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--ffffff);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+.use__item-descr {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 180%;
+  font-weight: 400;
+  color: var(--828282);
+  line-height: 1.7;
+}
+.use__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.use__btn {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--ffffff);
+  border-radius: 5px;
+  width: 235px;
+  height: 70px;
+  background: var(--131313);
+}
+.bg__line {
+  position: absolute;
+  bottom: 315px;
+  right: -61px;
+}

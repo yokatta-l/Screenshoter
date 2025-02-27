@@ -1,0 +1,24 @@
+.click {
+  padding-top: 145px;
+  padding-bottom: 191px;
+  position: relative;
+}
+.click__wrapper {
+  display: flex;
+  gap: 152px;
+  justify-content: flex-end;
+}
+.click__text {
+  max-width: 460px;
+  margin-top: 50px;
+}
+.click__gif {
+  position: relative;
+  z-index: 2;
+}
+.click__img {
+  position: absolute;
+  right: -6px;
+  top: -185px;
+  z-index: 1;
+}

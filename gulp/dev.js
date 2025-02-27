@@ -44,7 +44,6 @@ gulp.task("pixel-glass:dev", function () {
     .pipe(gulp.dest("./build/pixel-glass")); // Копируем в папку build/pixel-glass
 });
 
-
 gulp.task("html:dev", function () {
   return gulp
     .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
@@ -77,21 +76,23 @@ gulp.task("sass:dev", function () {
 });
 
 gulp.task("images:dev", function () {
-  return gulp
-    .src("./src/img/**/*", { encoding: false })
-    .pipe(changed("./build/img"))
-    .pipe(
-      imagemin([
-        imageminWebp({
-          quality: 85,
-        }),
-      ])
-    )
-    .pipe(rename({ extname: ".webp" }))
-    .pipe(gulp.dest("./build/img/"))
-    .pipe(gulp.src("./src/img/**/*", { encoding: false }))
-    .pipe(changed("./build/img/"))
-    .pipe(gulp.dest("./build/img/"));
+  return (
+    gulp
+      .src("./src/img/**/*", { encoding: false })
+      .pipe(changed("./build/img"))
+      // .pipe(
+      //   imagemin([
+      //     imageminWebp({
+      //       quality: 85,
+      //     }),
+      //   ])
+      // )
+      // .pipe(rename({ extname: ".webp" }))
+      .pipe(gulp.dest("./build/img/"))
+      .pipe(gulp.src("./src/img/**/*", { encoding: false }))
+      .pipe(changed("./build/img/"))
+      .pipe(gulp.dest("./build/img/"))
+  );
 });
 
 gulp.task("fonts:dev", function () {

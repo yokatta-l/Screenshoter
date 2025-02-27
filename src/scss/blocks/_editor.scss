@@ -1,0 +1,50 @@
+.editor {
+  padding-top: 166px;
+  padding-bottom: 150px;
+  position: relative;
+  // overflow-x: hidden;
+}
+.editor__wrapper {
+  display: flex;
+  gap: 152px;
+  justify-content: flex-end;
+}
+.editor__text {
+  max-width: 460px;
+  margin-top: 64px;
+}
+.editor__subtitle {
+  font-family: var(--second-family);
+}
+.editor__descr {
+  font-family: var(--second-family);
+}
+.editor__rectangle {
+  position: absolute;
+  bottom: 3px;
+  right: -106px;
+  border-radius: 70px;
+  width: 920px;
+  height: 650px;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    144deg,
+    rgba(116, 33, 176, 0.2) 20.65%,
+    rgba(208, 142, 255, 0.2) 100%
+  );
+  transform: rotate(-180deg);
+  z-index: -1;
+}
+.editor__donat {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  right: 278px;
+  top: -70px;
+  z-index: -2;
+}
+.editor__line {
+  position: absolute;
+  bottom: -133px;
+  left: -8px;
+}
