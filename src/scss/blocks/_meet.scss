@@ -2,12 +2,15 @@
   padding-top: 288px;
   padding-bottom: 118px;
   position: relative;
+  // overflow-y: visible;
+  // overflow-x: hidden;
 }
 .meet__line {
   position: absolute;
   top: -775px;
   left: -10px;
   z-index: -1;
+  width: 100vw;
 }
 .meet__wrapper {
   display: flex;
@@ -72,4 +75,28 @@
   line-height: 160%;
   color: var(--131313);
   transition: all 0.5s ease;
+}
+.meet__line-mid {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .meet__line {
+    display: none;
+  }
+  .meet__line-mid {
+    display: block;
+    position: absolute;
+    top: -284px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+  }
+}
+@media (max-width: 375px) {
+  .meet__line-mid {
+    display: none;
+  }
+  // top: -29rem;
+  // transform: scale(1.6) rotate(11deg);
 }
