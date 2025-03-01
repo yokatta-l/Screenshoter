@@ -1229,6 +1229,10 @@ body {
   display: none;
 }
 
+.meet__line-mini {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .meet__line {
     display: none;
@@ -1245,6 +1249,14 @@ body {
 @media (max-width: 375px) {
   .meet__line-mid {
     display: none;
+  }
+  .meet__line-mini {
+    display: block;
+    position: absolute;
+    top: -39.4rem;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
   }
 }
 .record {
