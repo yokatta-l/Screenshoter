@@ -2,7 +2,6 @@
   padding-top: 166px;
   padding-bottom: 150px;
   position: relative;
-  // overflow-x: hidden;
 }
 .editor__wrapper {
   display: flex;
@@ -47,4 +46,34 @@
   position: absolute;
   bottom: -133px;
   left: -8px;
+  width: 100vw;
+}
+@media (max-width: 1919px) {
+  .editor__rectangle {
+    right: 0;
+  }
+}
+@media (max-width: 1396px) {
+  .editor__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 768px) {
+  .editor__gif img {
+    width: 561px;
+    height: 315px;
+  }
+  .editor {
+    padding-top: 42px;
+  }
+  .editor__gif {
+    margin: 0 auto;
+  }
+  .editor__rectangle {
+    width: 588px;
+    height: 396px;
+  }
 }

@@ -40,3 +40,125 @@
   top: -216px;
   z-index: -1;
 }
+.link__img-mid {
+  display: none;
+}
+.link__mid {
+  display: none;
+}
+.link__mini {
+  display: none;
+}
+@media (max-width: 1131px) {
+  .link__wrapper {
+    flex-direction: column;
+  }
+  .link__img {
+    width: 482px;
+  }
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 768px) {
+  .link {
+    padding-top: 27px;
+  }
+  .link__gif img {
+    width: 561px;
+    height: 315px;
+  }
+  .link__img {
+    display: none;
+  }
+  .link__img-mid {
+    display: block;
+    position: absolute;
+    left: -67px;
+    top: -128px;
+    z-index: -1;
+  }
+  .link__rectangle {
+    bottom: 192px;
+    width: 412px;
+    height: 156px;
+    padding: 30px 50px;
+    font-size: 14px;
+    left: 175px;
+  }
+  .link__wrapper {
+    align-items: unset;
+    gap: 155px;
+  }
+  .link__gif {
+    margin: 0 auto;
+  }
+  .link__text {
+    display: flex;
+    gap: 112px;
+    max-width: unset;
+  }
+  .link__title {
+    line-height: 1.1;
+  }
+  .link__full {
+    display: none;
+  }
+  .link__mid {
+    display: block;
+  }
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 732px) {
+  .link__img-mid {
+    width: 374px;
+    height: 233px;
+  }
+  .link__gif img {
+    width: 345px;
+    height: 193px;
+  }
+  .link__rectangle {
+    bottom: 93vw;
+    left: 1vw;
+    width: 301px;
+    height: 151px;
+    font-size: 12px;
+    padding: 30px 19px 21px 23px;
+  }
+  .link__text {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .link__img-mid {
+    left: -17px;
+    top: -83px;
+  }
+  .link {
+    padding-top: 0;
+  }
+  .link__gif {
+    margin: unset;
+  }
+  .link__rectangle {
+    bottom: 52vw;
+    left: 10vw;
+    text-align: center;
+  }
+  .link__mini {
+    display: block;
+  }
+  .link__wrapper {
+    gap: 128px;
+  }
+  .link__title {
+    text-align: center;
+  }
+  .link__text {
+    gap: 22px;
+    margin-right: 5px;
+  }
+}

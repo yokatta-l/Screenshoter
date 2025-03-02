@@ -38,11 +38,22 @@
 }
 .record__donat {
   position: absolute;
-  left: -5px;
+  left: -101px;
   top: 20px;
   z-index: -2;
 }
-
+.record__mid {
+  display: none;
+}
+.record__line-mid {
+  display: none;
+}
+.record__donat-mini {
+  display: none;
+}
+.record__line-mini {
+  display: none;
+}
 @media (max-width: 1131px) {
   .record__wrapper {
     flex-direction: column;
@@ -52,5 +63,151 @@
 @media (max-width: 827px) {
   .record__rectangle {
     width: 459px;
+  }
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 768px) {
+  .record {
+    padding-top: 87px;
+  }
+  .record__rectangle {
+    height: 330px;
+    top: 32px;
+    bottom: unset;
+    left: -59px;
+  }
+  .record__donat {
+    width: 125px;
+    height: 125px;
+    left: -51px;
+    top: -34px;
+  }
+  .record__gif {
+    margin: 0 auto;
+  }
+  .record__gif img {
+    width: 561px;
+    height: 315px;
+    margin-right: 5px;
+  }
+  .record__wrapper {
+    align-items: unset;
+    gap: 57px;
+  }
+  .record__text {
+    gap: 85px;
+    display: flex;
+    max-width: unset;
+  }
+  .record__title {
+    min-width: 151px;
+  }
+  .record__block {
+    max-width: 428px;
+  }
+  .record__subtitle {
+    margin-bottom: 28px;
+  }
+  .record__full {
+    display: none;
+  }
+  .record__mid {
+    display: block;
+  }
+  .record__line {
+    display: none;
+  }
+  .record__line-mid {
+    display: block;
+    top: -123px;
+    left: -1px;
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+  }
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 675px) {
+  .record__gif img {
+    width: 100%;
+  }
+  .record__text {
+    flex-direction: column;
+  }
+}
+@media (max-width: 436px) {
+  .record__rectangle {
+    width: 224px;
+  }
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 375px) {
+  .record {
+    padding-top: 0;
+    padding-bottom: 115px;
+  }
+  .record__gif img {
+    width: 345px;
+    height: 193px;
+    margin-right: 0;
+  }
+  .record__line-mid {
+    display: none;
+  }
+  .record__rectangle {
+    width: 224px;
+    height: 182px;
+    border-radius: 35px;
+    top: -31px;
+    left: -5px;
+  }
+  .record__donat {
+    display: none;
+  }
+  .record__donat-mini {
+    display: block;
+    position: absolute;
+    left: -12px;
+    top: -61px;
+    z-index: -2;
+  }
+  .record__gif {
+    margin: unset;
+  }
+  .record__line-mini {
+    display: block;
+    top: -107px;
+    left: 0px;
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+  }
+  .record__wrapper {
+    gap: 28px;
+  }
+  .record__text {
+    align-items: center;
+    gap: 0;
+  }
+  .record__title {
+    margin-left: -8px;
+    margin-bottom: 17px;
+  }
+  .record__block {
+    max-width: 341px;
+    margin-right: 6px;
+  }
+  .record__subtitle {
+    margin-bottom: 24px;
+  }
+  .record__mid {
+    display: none;
   }
 }

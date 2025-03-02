@@ -86,7 +86,7 @@
   display: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .meet {
     padding-top: 147px;
   }
@@ -189,6 +189,9 @@
   .meet__card-text {
     font-size: 14px;
     line-height: 133%;
+  }
+  .meet {
+    padding-bottom: 91px;
   }
 }
 
