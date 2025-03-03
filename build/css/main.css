@@ -620,6 +620,9 @@ body {
   .edge {
     padding-top: 0;
   }
+  .edge__img img {
+    width: 60px;
+  }
 }
 .editor {
   padding-top: 166px;
@@ -729,6 +732,7 @@ body {
   }
   .editor__wrapper {
     gap: 57px;
+    margin-bottom: 40px;
   }
   .editor__text-wrapper {
     max-width: 435px;
@@ -748,7 +752,7 @@ body {
   .editor__line-mid {
     display: block;
     position: absolute;
-    bottom: -0.8rem;
+    bottom: 0.5rem;
     left: 0px;
     width: 100vw;
   }
@@ -819,7 +823,7 @@ body {
 }
 @media (max-width: 768px) {
   .editor {
-    padding-bottom: 132px;
+    padding-bottom: 90px;
   }
 }
 .faq {

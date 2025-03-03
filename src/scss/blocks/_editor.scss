@@ -102,6 +102,7 @@
   }
   .editor__wrapper {
     gap: 57px;
+    margin-bottom: 40px;
   }
   .editor__text-wrapper {
     max-width: 435px;
@@ -121,7 +122,7 @@
   .editor__line-mid {
     display: block;
     position: absolute;
-    bottom: -0.8rem;
+    bottom: 0.5rem;
     left: 0px;
     width: 100vw;
   }
@@ -194,6 +195,6 @@
 }
 @media (max-width: 768px) {
   .editor {
-    padding-bottom: 132px;
+    padding-bottom: 90px;
   }
 }
