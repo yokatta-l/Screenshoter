@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
+  flex-wrap: wrap;
+  gap: 29px;
 }
 .edge__card {
   width: 338px;
@@ -50,4 +52,14 @@
   width: 235px;
   height: 70px;
   background: var(--131313);
+}
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+@media (max-width: 768px) {
+  .edge__card {
+    width: 324px;
+    height: 294px;
+  }
+  .edge {
+    padding-top: 0;
+  }
 }

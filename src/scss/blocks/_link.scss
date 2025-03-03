@@ -162,3 +162,13 @@
     margin-right: 5px;
   }
 }
+@media (max-width: 768px) {
+  .link {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .link {
+    padding-bottom: 0;
+  }
+}

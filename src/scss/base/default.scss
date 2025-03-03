@@ -62,6 +62,9 @@ body {
 .fw-500 {
   font-weight: 500;
 }
+.purple-mid {
+  display: none;
+}
 @media (max-width: 375px) {
   .container {
     padding-left: 15px;
@@ -89,6 +92,10 @@ body {
   .subtitle4,
   .descr4 {
     font-size: 14px;
+  }
+  .purple-mid {
+    color: var(--7421b0);
+    display: inline-block;
   }
 }
 // /////////////////////////////////////////////////////////////////////////////////////
