@@ -154,7 +154,7 @@
     height: 193px;
   }
   .editor__rectangle {
-    bottom: 22.6rem;
+    bottom: 17.2rem;
     right: -57px;
     border-radius: 35px;
   }
@@ -187,14 +187,19 @@
   }
   .editor__line-mini {
     display: block;
-    position: absolute;
     bottom: 3rem;
     left: 0px;
+    position: absolute;
     width: 100vw;
   }
 }
 @media (max-width: 768px) {
   .editor {
     padding-bottom: 90px;
+  }
+}
+@media (max-width: 375px) {
+  .editor {
+    padding-bottom: 22px;
   }
 }

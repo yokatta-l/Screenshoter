@@ -13,6 +13,9 @@
 body {
   overflow-x: hidden;
 }
+main {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1440px;
   // padding-left: 41px;
@@ -65,13 +68,20 @@ body {
 .purple-mid {
   display: none;
 }
+.mini {
+  display: none;
+}
 @media (max-width: 375px) {
   .container {
     padding-left: 15px;
     padding-right: 5px;
   }
 }
-
+@media (max-width: 1910px) {
+  .bg {
+    width: 94%;
+  }
+}
 @media (max-width: 1509px) {
   .container {
     padding-left: 20px;
@@ -97,6 +107,12 @@ body {
     color: var(--7421b0);
     display: inline-block;
   }
+  .full {
+    display: none;
+  }
+  .bg {
+    width: 730px;
+  }
 }
 // /////////////////////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////////////////
@@ -118,5 +134,8 @@ body {
   }
   .title4 {
     margin-bottom: 0;
+  }
+  .mini {
+    display: block;
   }
 }
