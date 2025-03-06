@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative; /* Добавлено для создания контекста наложения */
+  z-index: 5; /* Высокий z-index для основного контента */
 }
 .join__title {
   font-family: var(--font-family);
@@ -40,4 +42,48 @@
   position: absolute;
   top: -80px;
   left: -8px;
+  z-index: 1;
+}
+.join__elements-mid,
+.join__line-mid {
+  display: none;
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 1667px) {
+  .join__elements {
+    bottom: 36rem;
+  }
+  .join__wrapper {
+    margin-top: 200px;
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 768px) {
+  .join__title {
+    font-size: 24px;
+  }
+  .join__elements {
+    bottom: 28rem;
+    left: -11rem;
+  }
+  .join__elements-full {
+    display: none;
+  }
+  .join__elements-mid {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: 28rem;
+    left: -11rem;
+  }
+  .join__line-full {
+    display: none;
+  }
+  .join__line-mid {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: -13.5rem;
+    left: -16.3rem;
+  }
 }
