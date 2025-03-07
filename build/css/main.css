@@ -2968,6 +2968,21 @@ main {
     margin-right: 0;
   }
 }
+@-moz-document url-prefix() {
+  .use {
+    padding-top: 79px;
+  }
+  @media (max-width: 768px) {
+    .use {
+      padding-top: 69px;
+    }
+  }
+  @media (max-width: 375px) {
+    .use {
+      padding-top: 47px;
+    }
+  }
+}
 .useful {
   padding-top: 334px;
   padding-bottom: 200px;
@@ -3200,5 +3215,15 @@ main {
   .useful__card:nth-child(4) .useful__card-img {
     margin-left: 0;
     margin-bottom: 0;
+  }
+}
+@-moz-document url-prefix() {
+  .useful__wrapper {
+    margin-bottom: 61px;
+  }
+  @media (max-width: 375px) {
+    .useful__wrapper {
+      margin-bottom: 32px;
+    }
   }
 }

@@ -240,3 +240,14 @@
     }
   }
 }
+// /////////////////////////////////////////////////////////////////////////////////////
+@-moz-document url-prefix() {
+  .useful__wrapper {
+    margin-bottom: 61px;
+  }
+  @media (max-width: 375px) {
+    .useful__wrapper {
+      margin-bottom: 32px;
+    }
+  }
+}

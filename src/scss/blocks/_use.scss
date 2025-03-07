@@ -255,3 +255,19 @@
     margin-right: 0;
   }
 }
+// /////////////////////////////////////////////////////////////////////////////////////
+@-moz-document url-prefix() {
+  .use {
+    padding-top: 79px;
+  }
+  @media (max-width: 768px) {
+    .use {
+      padding-top: 69px;
+    }
+  }
+  @media (max-width: 375px) {
+    .use {
+      padding-top: 47px;
+    }
+  }
+}
