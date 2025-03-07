@@ -1,6 +1,6 @@
 .day {
   padding-top: 103px;
-  padding-bottom: 117px;
+  padding-bottom: 81px;
 }
 .day__title {
   font-family: var(--font-family);
@@ -64,6 +64,9 @@
   font-size: 18px;
   line-height: 200%;
   color: var(--828282);
+  &:nth-child(2) {
+    margin-bottom: 36px;
+  }
   &:nth-child(3) {
     margin-bottom: 37px;
   }
