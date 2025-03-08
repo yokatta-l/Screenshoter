@@ -57,13 +57,13 @@ gulp.task("html:docs", function () {
       .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
       .pipe(changed("./docs/"))
       .pipe(plumber(plumberNotify("HTML")))
+      .pipe(fileInclude(fileIncludeSetting))
       .pipe(
         replace(
           /(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
           "$1./$4$5$7$1"
         )
       )
-      .pipe(fileInclude(fileIncludeSetting))
       // .pipe(webpHTML())
       // .pipe(htmlclean())
       .pipe(gulp.dest("./docs/"))
