@@ -1,5 +1,8 @@
 const config = {
   mode: "production",
+  optimization: {
+    minimize: false, // Только отключаем минимизацию
+  },
   entry: {
     index: "./src/js/index.js",
     // contacts: './src/js/contacts.js',

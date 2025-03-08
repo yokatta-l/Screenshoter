@@ -63,7 +63,8 @@ gulp.task("html:docs", function () {
           "$1./$4$5$7$1"
         )
       )
-      .pipe(webpHTML())
+      .pipe(fileInclude(fileIncludeSetting))
+      // .pipe(webpHTML())
       // .pipe(htmlclean())
       .pipe(gulp.dest("./docs/"))
   );
@@ -96,27 +97,27 @@ gulp.task("images:docs", function () {
       // .src("./src/img/**/*", { encoding: false })
       .src(["./src/img/**/*", "!./src/img/svgicons/**/*"], { encoding: false })
       .pipe(changed("./docs/img"))
-      .pipe(
-        imagemin([
-          imageminWebp({
-            quality: 85,
-          }),
-        ])
-      )
-      .pipe(rename({ extname: ".webp" }))
-      .pipe(gulp.dest("./docs/img/"))
-      .pipe(gulp.src("./src/img/**/*", { encoding: false }))
-      .pipe(changed("./docs/img"))
-      .pipe(
-        imagemin(
-          [
-            imagemin.gifsicle({ interlaced: true }),
-            imagemin.mozjpeg({ quality: 85, progressive: true }),
-            imagemin.optipng({ optimizationLevel: 5 }),
-          ],
-          { verbose: true }
-        )
-      )
+      // .pipe(
+      //   imagemin([
+      //     imageminWebp({
+      //       quality: 85,
+      //     }),
+      //   ])
+      // )
+      // .pipe(rename({ extname: ".webp" }))
+      // .pipe(gulp.dest("./docs/img/"))
+      // .pipe(gulp.src("./src/img/**/*", { encoding: false }))
+      // .pipe(changed("./docs/img"))
+      // .pipe(
+      //   imagemin(
+      //     [
+      //       imagemin.gifsicle({ interlaced: true }),
+      //       imagemin.mozjpeg({ quality: 85, progressive: true }),
+      //       imagemin.optipng({ optimizationLevel: 5 }),
+      //     ],
+      //     { verbose: true }
+      //   )
+      // )
       .pipe(gulp.dest("./docs/img/"))
   );
 });
