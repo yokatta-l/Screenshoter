@@ -10,6 +10,9 @@
   --font-family: "Rubik", sans-serif;
   --second-family: "Roboto", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -56,9 +59,9 @@ main {
   margin: 0 auto;
   border-radius: 70px;
   width: 1808px;
-  height: 1825px;
   background-image: url("../../img/bg-div.png");
   position: relative;
+  background-size: cover;
 }
 .fw-500 {
   font-weight: 500;
@@ -90,11 +93,7 @@ main {
     padding-right: 20px;
   }
 }
-@media (max-width: 1549px) {
-  .bg {
-    height: 2484px;
-  }
-}
+
 // /////////////////////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////////////////
 // /////////////////////////////////////////////////////////////////////////////////////
@@ -124,7 +123,6 @@ main {
     width: 781px;
     background-image: url("../../img/bg-div-mid.png");
     margin-left: 0px;
-    height: 2484px;
   }
   .bg__glossy,
   .bg__ball,
@@ -135,8 +133,10 @@ main {
 // /////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 767px) {
   .bg {
+    background-image: url("../../img/bg-div-767.jpg");
     width: 94%;
-    height: 3127px;
+    margin-left: auto;
+    // height: 3127px;
   }
 }
 // /////////////////////////////////////////////////////////////////////////////////////

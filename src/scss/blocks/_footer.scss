@@ -79,6 +79,9 @@
   .footer__li a {
     font-size: 14px;
   }
+  .footer__items {
+    gap: 20px;
+  }
 }
 ///////////////////////////////////////////////////////////////////////////////
 @media (max-width: 589px) {
@@ -105,7 +108,7 @@
   .footer__items {
     justify-content: unset;
     // gap: 84px;
-    column-gap: 84px;
+    column-gap: 86px;
     row-gap: 21px;
   }
 }

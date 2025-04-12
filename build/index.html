@@ -12,6 +12,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./css/main.css" />
+	<style>
+		HTML {
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			background-image: url("../img/Frame.jpg");
+		}
+
+		@media (max-width: 768px) {
+			HTML {
+				background-image: url("../img/tablet_768.jpg");
+			}
+		}
+
+		@media (max-width: 375px) {
+			HTML {
+				background-image: url("../img/mobile_375.jpg");
+			}
+		}
+	</style>
+	<link href="./pixel-glass/styles.css" rel="stylesheet">
+	<script src="./pixel-glass/script.js"></script>
 </head>
 
 <body>
@@ -23,10 +44,10 @@
       <img src="./img/logo-low.svg" alt="logo" class="header__logo--low">
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#" class="header__link">Функции</a></li>
-          <li class="header__item"><a href="#" class="header__link">Преимущества</a></li>
-          <li class="header__item"><a href="#" class="header__link">Как использовать</a></li>
-          <li class="header__item"><a href="#" class="header__link">Частые вопросы</a></li>
+          <li class="header__item"><a href="#meet" class="header__link">Функции</a></li>
+          <li class="header__item"><a href="#edge" class="header__link">Преимущества</a></li>
+          <li class="header__item"><a href="#use" class="header__link">Как использовать</a></li>
+          <li class="header__item"><a href="#faq" class="header__link">Частые вопросы</a></li>
         </ul>
       </nav>
       <div class="header__burger-wrapper">
@@ -40,10 +61,10 @@
           <div class="mobile-menu__close">&times;</div>
         </div>
         <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Функции</a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Преимущества</a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Как использовать</a></li>
-          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Частые вопросы</a></li>
+          <li class="mobile-menu__item"><a href="#meet" class="mobile-menu__link">Функции</a></li>
+          <li class="mobile-menu__item"><a href="#edge" class="mobile-menu__link">Преимущества</a></li>
+          <li class="mobile-menu__item"><a href="#use" class="mobile-menu__link">Как использовать</a></li>
+          <li class="mobile-menu__item"><a href="#faq" class="mobile-menu__link">Частые вопросы</a></li>
         </ul>
       </div>
       <div class="overlay"></div>
@@ -78,7 +99,7 @@
   <img src="./img/main/donat.png" alt="donat" class="main__donat">
 
 </section>
-		<section class="meet">
+		<section class="meet" id="meet">
   <img src="./img/meet/line.svg" alt="line" class="meet__line">
   <img src="./img/meet/line-mid.svg" alt="line" class="meet__line-mid">
   <img src="./img/meet/line-mini.png" alt="line" class="meet__line-mini">
@@ -220,7 +241,7 @@
   <img src="./img/donat-editor.png" alt="donat" class="editor__donat">
   <img src="./img/editor-line.svg" alt="line" class="editor__line">
 </section>
-		<section class="edge">
+		<section class="edge" id="edge">
   <div class="container">
     <h2 class="hidden">Наши преимущества</h2>
     <div class="edge__cards">
@@ -331,7 +352,7 @@
 			<img src="./img/day/white-glossy.png" alt="glossy" class="bg__glossy">
 			<img src="./img/white-glossy2.png" alt="glossy" class="bg__glossy-second">
 			<img src="./img/line.svg" alt="line" class="bg__line">
-			<section class="use">
+			<section class="use" id="use">
   <div class="container use__container">
     <div class="use__title-wrapper">
       <h2 class="use__title">Как использовать <span class="purple">Screenshoter</span></h2>
@@ -358,7 +379,7 @@
         </div>
       </div>
       <div class="use__item">
-        <div class="use__item-title">Шаг 2.</div>
+        <div class="use__item-title">Шаг 3.</div>
         <div class="use__item-wrapper">
           <button class="use__item-btn">Скачать бесплатно</button>
         </div>
@@ -415,7 +436,7 @@
     </div>
   </div>
 </section>
-		<section class="faq">
+		<section class="faq" id="faq">
   <div class="faq__container">
     <h2 class="faq__title">FAQ</h2>
     <div class="faq__items">

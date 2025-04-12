@@ -1,5 +1,5 @@
 .join {
-  padding-top: 199px;
+  padding-top: 207px;
   padding-bottom: 229px;
   position: relative;
 }
@@ -40,7 +40,7 @@
 }
 .join__line {
   position: absolute;
-  top: -80px;
+  top: -73px;
   left: -8px;
   z-index: 1;
 }
@@ -55,16 +55,20 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1667px) {
   .join__elements {
-    bottom: 36rem;
+    bottom: 27rem;
   }
   .join__wrapper {
     margin-top: 200px;
+  }
+  .join {
+    padding-bottom: 100px;
   }
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 768px) {
   .join {
     padding-bottom: 102px;
+    padding-top: 198px;
   }
   .join__title {
     font-size: 24px;

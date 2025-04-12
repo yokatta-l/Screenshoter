@@ -205,6 +205,10 @@ input {
   --second-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -261,9 +265,9 @@ main {
   margin: 0 auto;
   border-radius: 70px;
   width: 1808px;
-  height: 1825px;
   background-image: url("../img/bg-div.png");
   position: relative;
+  background-size: cover;
 }
 
 .fw-500 {
@@ -299,11 +303,6 @@ main {
     padding-right: 20px;
   }
 }
-@media (max-width: 1549px) {
-  .bg {
-    height: 2484px;
-  }
-}
 @media (max-width: 768px) {
   .container {
     padding-left: 45px;
@@ -330,7 +329,6 @@ main {
     width: 781px;
     background-image: url("../img/bg-div-mid.png");
     margin-left: 0px;
-    height: 2484px;
   }
   .bg__glossy,
   .bg__ball,
@@ -340,8 +338,9 @@ main {
 }
 @media (max-width: 767px) {
   .bg {
+    background-image: url("../img/bg-div-767.jpg");
     width: 94%;
-    height: 3127px;
+    margin-left: auto;
   }
 }
 @media (max-width: 375px) {
@@ -420,12 +419,15 @@ main {
   display: none;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1334px) {
   .click__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 788px) {
@@ -472,6 +474,15 @@ main {
   }
   .click__subtitle {
     margin-bottom: 28px;
+  }
+}
+@media (max-width: 675px) {
+  .click__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 9px;
   }
 }
 @media (max-width: 640px) {
@@ -725,6 +736,10 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
+  }
+  .day__items {
+    padding-left: 0;
   }
 }
 @media (max-width: 375px) {
@@ -907,6 +922,9 @@ main {
             justify-content: unset;
     gap: 26px;
     margin-bottom: 64px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .edge {
     padding-top: 0;
@@ -940,6 +958,7 @@ main {
 @media (max-width: 428px) {
   .edge__card {
     width: 100%;
+    height: unset;
   }
 }
 @media (max-width: 375px) {
@@ -1243,6 +1262,7 @@ main {
   padding-top: 100px;
   padding-bottom: 128px;
   background: url("../img/faq-bg.jpg");
+  background-size: cover;
 }
 
 .faq__container {
@@ -1392,13 +1412,17 @@ main {
   display: none;
 }
 
+@media (min-width: 1920px) {
+  .faq__item:nth-child(3) {
+    height: 140px;
+  }
+}
 @media (max-width: 971px) {
   .faq__tab-left {
     gap: 40px;
   }
   .faq__answer {
     padding-left: 94px;
-    padding-left: 77px;
     padding-right: 74px;
   }
   .faq__item:nth-child(2) .faq__answer, .faq__item:nth-child(3) .faq__answer, .faq__item:nth-child(4) .faq__answer, .faq__item:nth-child(5) .faq__answer {
@@ -1488,7 +1512,7 @@ main {
             justify-content: space-between;
   }
   .faq__answer {
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-right: 0;
     font-size: 12px;
   }
@@ -1631,6 +1655,9 @@ main {
   .footer__li a {
     font-size: 14px;
   }
+  .footer__items {
+    gap: 20px;
+  }
 }
 @media (max-width: 589px) {
   .footer__items {
@@ -1657,9 +1684,9 @@ main {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
-    -webkit-column-gap: 84px;
-       -moz-column-gap: 84px;
-            column-gap: 84px;
+    -webkit-column-gap: 86px;
+       -moz-column-gap: 86px;
+            column-gap: 86px;
     row-gap: 21px;
   }
 }
@@ -1824,7 +1851,7 @@ main {
   }
 }
 .join {
-  padding-top: 199px;
+  padding-top: 207px;
   padding-bottom: 229px;
   position: relative;
 }
@@ -1877,7 +1904,7 @@ main {
 
 .join__line {
   position: absolute;
-  top: -80px;
+  top: -73px;
   left: -8px;
   z-index: 1;
 }
@@ -1893,15 +1920,19 @@ main {
 
 @media (max-width: 1667px) {
   .join__elements {
-    bottom: 36rem;
+    bottom: 27rem;
   }
   .join__wrapper {
     margin-top: 200px;
+  }
+  .join {
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 768px) {
   .join {
     padding-bottom: 102px;
+    padding-top: 198px;
   }
   .join__title {
     font-size: 24px;
@@ -2055,6 +2086,17 @@ main {
     width: 482px;
   }
 }
+@media (max-width: 1334px) {
+  .link__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .link__rectangle {
+    bottom: 296px;
+  }
+}
 @media (max-width: 768px) {
   .link {
     padding-top: 27px;
@@ -2129,6 +2171,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 9px;
   }
 }
 @media (max-width: 375px) {
@@ -2576,6 +2619,35 @@ main {
   display: none;
 }
 
+@media (max-width: 1290px) {
+  .meet {
+    padding-top: 70px;
+  }
+  .meet__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .meet__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .meet__title {
+    max-width: unset;
+  }
+}
+@media (max-width: 1201px) {
+  .meet__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   .meet {
     padding-top: 147px;
@@ -2602,6 +2674,13 @@ main {
   .meet__wrapper {
     gap: 91px;
     margin-bottom: 58px;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
   .meet__mid {
     display: block;
@@ -2625,6 +2704,31 @@ main {
   }
   .meet__card-text {
     font-size: 18px;
+  }
+}
+@media (max-width: 759px) {
+  .meet__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .meet__title {
+    max-width: unset;
+  }
+}
+@media (max-width: 748px) {
+  .meet__card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .meet {
+    padding-top: 66px;
   }
 }
 @media (max-width: 375px) {
@@ -2688,17 +2792,6 @@ main {
   }
   .meet {
     padding-bottom: 91px;
-  }
-}
-@media (max-width: 1201px) {
-  .meet__cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media (max-width: 748px) {
-  .meet__card {
-    margin: 0 auto;
   }
 }
 .record {
@@ -2766,7 +2859,7 @@ main {
   display: none;
 }
 
-@media (max-width: 1131px) {
+@media (max-width: 1334px) {
   .record__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2852,6 +2945,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 9px;
   }
 }
 @media (max-width: 436px) {
@@ -3262,6 +3356,9 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 29px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .useful__card {
@@ -3309,9 +3406,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .useful {
-    padding-top: 562px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 768px) {
@@ -3333,7 +3430,7 @@ main {
     font-size: 20px;
   }
   .useful {
-    padding-top: 262px;
+    padding-top: 230px;
   }
   .useful__subtitle {
     font-size: 12px;
@@ -3346,6 +3443,9 @@ main {
             flex-direction: row;
     gap: 67px;
     margin-bottom: 59px;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
   .useful__card {
     width: 324px;
@@ -3392,11 +3492,6 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media (max-width: 511px) {
-  .useful {
-    padding-top: 681px;
   }
 }
 @media (max-width: 375px) {

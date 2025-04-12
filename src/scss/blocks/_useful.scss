@@ -34,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 29px;
-  // justify-content: space-between;
+  justify-content: center;
 }
 .useful__card {
   width: 338px;
@@ -77,9 +77,7 @@
 @media (max-width: 1037px) {
   .useful__wrapper {
     flex-direction: column;
-  }
-  .useful {
-    padding-top: 562px;
+    align-items: center;
   }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -102,7 +100,7 @@
     font-size: 20px;
   }
   .useful {
-    padding-top: 262px;
+    padding-top: 230px;
   }
   .useful__subtitle {
     font-size: 12px;
@@ -112,6 +110,7 @@
     flex-direction: row;
     gap: 67px;
     margin-bottom: 59px;
+    align-items: unset;
   }
   .useful__card {
     width: 324px;
@@ -161,11 +160,11 @@
   }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-@media (max-width: 511px) {
-  .useful {
-    padding-top: 681px;
-  }
-}
+// @media (max-width: 511px) {
+//   .useful {
+//     padding-top: 681px;
+//   }
+// }
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 375px) {
   .useful {
