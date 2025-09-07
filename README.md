@@ -1,4 +1,4 @@
-сайт - https://ponrez.github.io/Screenshoter/
+резултьта - https://yokatta-l.github.io/Screenshoter/
 
 
 
