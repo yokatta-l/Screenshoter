@@ -1,4 +1,4 @@
-резултьта - https://yokatta-l.github.io/Screenshoter/
+результат - https://yokatta-l.github.io/Screenshoter/
 
 
 
